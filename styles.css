@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;      
+}
+body{
+    background-color:#fafafaee;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 30px;
+}
+nav{
+    margin: 5px;
+    border: 2px solid black;
+    padding: 10px 5px 10px 5px;
+}
+
+
+.section-presentacion {
+    
+    padding: 10px 5px 5px 3px;
+    margin: 20px;
+    border: 3px solid rgb(235, 33, 110);
+    display: flex;
+    margin-top: 58px;
+}
+div.mipresentacion{
+    margin-left: 20px;
+    background-color: antiquewhite;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+
+}
+
+footer{
+    padding: 0px 0px 0px 0px;
+    background-color: #b3d5f5ee;  
+    color: black;
+    font-family: Georgia; 
+    font-size: 12px; 
+}
+
+div.redes{
+    padding: 10px 0px 15px 0px;
+    margin: 1px;
+    border: 3px solid rgb(62, 141, 245);
+}
+
+#creador{
+    padding: 10px 0px 15px 0px;
+    margin: 1px;
+    
+}
+
+.fuente-clara {color: #eeeeee;}
+
+.fuente-oscura {color: #22211f;}
+
+.fuente-acento {color: #b59a61;}
+
+.fragmento{
+    display: flex;
+    padding: 15px;
+    margin-left: 15px;
+    width: 30%;
+    flex-direction: column;
+}
+#tmñ_frag{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.container {
+    top: 0px;
+    position: fixed;
+    color: #fff;
+    background-color: #97da59;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5;
+  }
+.item-sector {
+    border: 1px solid #fff;
+    width: 200px;
+    height: 30px;
+    align-items: end;
+    text-align: right;
+    color: black;
+    font-family: Georgia; 
+    font-size: 16px; 
+    
+  }
+#cora{
+    width: 200px;
+    border-radius: 10%;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: #22211f;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+    display: grid;
+    justify-content: center;
+  }
+  .form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+  .formu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    .container {
+        top: 0px;
+        position: fixed;
+        color: #fff;
+        background-color: #b0cf3f;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+      }
+    .checkbtn{
+        display: block;
+        margin-left: 100px;
+        }
+    .item {
+        display: none;
+      }
+    .fragmento{
+        display: flex;
+        padding: 15px;
+        margin-left: 15px;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    
+  }
+  @media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+      }
+      .form-row button {
+        margin-left: 120px;
+    }
+  }
